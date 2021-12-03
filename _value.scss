@@ -1,0 +1,24 @@
+.btn{
+    border-width: 5px;
+}
+.form-control{
+    border-width: 3px;
+}
+.bg-cover{
+    background-size: cover;
+    background-position: center  center;
+}
+.header-carousel-item{
+    height: 450px;
+}
+.carousel-caption{
+    background: rgba(0,0,0,.6);
+}
+@media (min-width:768px){
+    .text-md-dark{
+        color: #333;
+    }
+}
+.color{
+    color: gray;
+}

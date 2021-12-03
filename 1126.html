@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Pastar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="<link rel=" stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+
+    <SCript>
+
+    </SCript>
+</head>
+
+<body>
+
+    <div class="bg-secondary px-3">
+        <div class="container text-right">
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram-square"></i></a>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">New Pastar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首頁<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">餐廳特色<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            選單
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">美味菜單</a>
+                            <a class="dropdown-item" href="#">線上訂位</a>
+                            <a class="dropdown-item" href="#">外帶服務</a>
+                            <a class="dropdown-item" href="#">分店資訊</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex align-items-center">
+                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit" data-toggle="modal"
+                        data-target="#Modal">搜尋</button>
+                    <button class="btn btn-outline-light m-1" data-toggle="modal" data-target="#R">會員登入</button>
+                    <button class="btn btn-outline-light m-1" data-toggle="modal" data-target="#L">會員註冊</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="R" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">會員登入</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <section>
+                        <form class="needs-validation" novalidate>
+                            <div class="from-group mb-3">
+                                <label for="username">請輸入電話號碼*</label>
+                                <input type="tel" class="form-control" id="tel" placeholder="請輸入電話號碼" required>
+                                <div class="invalid-feedback">
+                                    請輸入電話號碼
+                                </div>
+                            </div>
+                            <div class="from-group mb-3">
+                                <label for="username">請輸入Email*</label>
+                                <input type="email" class="form-control" id="email" placeholder="請輸入Email" required>
+                                <div class="invalid-feedback">
+                                    請輸入email
+                                </div>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio1">已記住email</label>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-secondary">取消</button>
+                                <button type="submit" class="btn btn-primary">送出</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning text-white mr-auto" data-dismiss="modal" data-toggle="modal"
+                        data-target="#L">切換到註冊</button>
+                    <button type="button" class="btn btn-warning text-white" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning text-white">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="L" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">會員註冊</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <section>
+                        <form class="needs-validation" novalidate>
+                            <div class="from-group mb-3">
+                                <label for="username">姓名*</label>
+                                <input type="text" class="form-control" id="username" placeholder="請輸入姓名" required>
+                                <div class="invalid-feedback">
+                                    請輸入姓名
+                                </div>
+                            </div>
+                            <div class="from-group mb-3">
+                                <label for="username">請輸入電話號碼*</label>
+                                <input type="tel" class="form-control" id="tel" placeholder="請輸入電話號碼" required>
+                                <div class="invalid-feedback">
+                                    請輸入電話號碼
+                                </div>
+                            </div>
+                            <div class="from-group mb-3">
+                                <label for="username">請輸入Email*</label>
+                                <input type="email" class="form-control" id="email" placeholder="請輸入Email" required>
+                                <div class="invalid-feedback">
+                                    請輸入email
+                                </div>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio1">已記住email</label>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-secondary">取消</button>
+                                <button type="submit" class="btn btn-primary">送出</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning text-white mr-auto" data-dismiss="modal" data-toggle="modal"
+                        data-target="#R">切換到登入</button>
+                    <button type="button" class="btn btn-warning text-white" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning text-white">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item header-carousel-item bg-cover active"
+                    style="background-image: url(https://images.unsplash.com/photo-1492683513054-55277abccd99?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+                    <img src="" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item  header-carousel-item bg-cover"
+                    style="background-image: url(https://images.unsplash.com/photo-1497668512640-fcbd959e5338?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=);">
+                    <img src="" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item  header-carousel-item bg-cover"
+                    style="background-image: url(https://images.unsplash.com/photo-1453831362806-3d5577f014a4?dpr=2&auto=format&fit=crop&w=1500&h=1016&q=80&cs=tinysrgb&crop=);">
+                    <img src="" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <div class="carousel-caption d-none d-md-block px-3">
+                <h5>一個人，也可以輕鬆美味</h5>
+                <p>有什麼比一盤熱氣蒸騰的義大利麵更誘人？有什麼比餡料軟嫩的義大利餛飩更美味？一把十元硬幣大小的義大利麵大約是一個人的分量，加鹽煮熟後可分別拌入紅、白、青醬等，呈現經典風味。</p>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="section bg-info py-3 text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="div mb-2"><i class="fas fa-utensils fa-3x"></i></div>
+                    <h3>意難忘，忘不了的味道</h3>
+                    <p>吃膩了台灣小吃，偶爾就會想來點異國料理，這時義大利麵應該就是不少人會連想到的選項，今天身為小資族的編輯就要來介紹幾間平日愛訪的店家，不只價格很親民，CP值還超高的唷！</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="div mb-2"><i class="fas fa-pizza-slice fa-3x"></i></div>
+                    <h3>積沈在心中的漣漪</h3>
+                    <p>每次來到中山站就會想到荷蘭小鬆餅，目前於大同區已有兩家分店，不管想來點正餐，還是想與朋友找間店坐下聊天都很適合。編輯最愛它們家的白酒蛤蠣義大利麵，加入蒜、九層塔下去炒香，麵條吸附上鮮甜的湯汁，酒味也不會太重但有提味效果，吃下口真的就是幸福啊！
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="div mb-2"><i class="fas fa-hamburger fa-3x"></i></div>
+                    <h3>痛風蛤蜊義大利麵</h3>
+                    <p>愛吃蛤蠣、蝦子的朋友絕對不能錯過這一間，讓你吃到痛風都會笑啊！這擺盤一上桌就已讓編輯驚呆三秒，誠意十足的蛤蠣忍不住拿起手機狂拍，蛤蠣不算大但整盤約有60-70顆，麵條軟硬度適中，醬汁也還算清爽，以這個份量跟價位來說個人覺得很超值。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section container-fluid py-5 bg-light text-white" style="position: relative;">
+        <div class="row">
+            <div class="col-md-5 bg-cover"
+                style="position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-end text-md-dark">
+                <div class="col-md-7">
+                    <h3>為使餐飲業能恢復提供內用服務:</h3>
+                    <p>並有效防範COVID-19疫情，業應遵守管理措施規定，另餐飲場所應依循中央單一隔間室內50人、室外100人上限規範。如單一營業場所同一時段以不同隔間容納總人數超過室內50人、室外100人，不同隔間人員進出應分艙分流，業者也應於3日前向衛生局報備防疫措施。
+                    </p>
+                    <a href="#" class="btn btn-outline-info m-3 bg-light">美味菜單</a>
+                    <a href="#" class="btn btn-outline-info m-3 bg-light">會員資料</a>
+                    <a href="#" class="btn btn-outline-info m-3 bg-light">交通資訊</a>
+                    <a href="#" class="btn btn-outline-info m-3 bg-light">停車資訊</a>
+                    <a href="#" class="btn btn-outline-info m-3 bg-light">線上訂位</a>
+                    <a href="#" class="btn btn-outline-info m-3 bg-light">線上訂餐</a>
+                    <a href="#" class="btn btn-outline-info m-3 bg-light">每月精選</a>
+                    <a href="#" class="btn btn-outline-info m-3 bg-light">查看更多</a>
+                    <div class="container">
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <h4>餐飲從業人員健康管理:</h4>
+                                <p>餐飲從業人員每日量測體溫及監測健康狀況，當出現發燒或其他疑似COVID-19症狀，應儘速就醫接受評估及處置。</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>餐飲從業人員衛生行為:</h4>
+                                <p>餐飲從業人員應佩戴口罩及勤洗手，並加強防疫教育訓練，內化防疫行為；且人員用餐環境須維持良好通風，不同桌之人員間保持1.5公尺以上間距、獨立包廂、屏風間隔或使用隔板；同桌者採梅花式安排座位或使用隔板。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5 bg-info">
+        <div class="container">
+            <h2 class="text-center mb-5 text-light">義大利麵上百種Spaghetti、Conchiglie、Lasagne差別在哪</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="pr-3"><i class="fas fa-apple-alt fa-4x text-light "></i></div>
+                        <div>
+                            <h3 class="text-light">千層麵 Lasagne</h3>
+                            <p class="text-light">大片大片的麵皮層層相疊，麵皮間鋪上各種醬料烤製而成。要留意義大利文gn的發音是像國語「捏」字。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5 text-light">
+                    <div class="d-flex">
+                        <div class="pr-3"><i class="fas fa-seedling fa-4x text-light "></i></div>
+                        <div>
+                            <h3>小/大貝殼麵 Conchiglie/ Lumaconi</h3>
+                            <p>在台灣十分常見的義大利麵，筆管的紋路加上空心的造型，特別容易吸附醬汁，讓麵條從裡到外都吃得到醬料。寬度大約是筆的粗細，因此也有人翻成「筆管麵」。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-light">
+                    <div class="d-flex">
+                        <div class="pr-3"><i class="fas fa-lemon fa-4x text-light"></i></div>
+                        <div>
+                            <h3>鳥巢麵 Tagliatelle</h3>
+                            <p>屬於寬扁麵的一種，形狀如鳥巢的造型，方便控制份量，據說發明的靈感來自文藝復興時貴族婦女的髮型。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-light">
+                    <div class="d-flex">
+                        <div class="pr-3"><i class="fas fa-carrot fa-4x text-light"></i></div>
+                        <div>
+                            <h3>螺旋麵 Rotini</h3>
+                            <p>螺旋的造型讓醬汁更容易吸附，適合各種醬料，也可以做成清爽的涼拌沙拉。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57836.38531328956!2d121.46037999192032!3d25.0417398458532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9498103dba9%3A0xac0213204fca2ed8!2z6Jap6I6J5LqeIOWPsOWMl-mkqOWJjeW6lw!5e0!3m2!1szh-TW!2stw!4v1638119439504!5m2!1szh-TW!2stw"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                <div class="col-md-6">
+                    <form class="needs-validation" novalidate>
+                        <div class="from-group mb-3">
+                            <label for="username">姓名*</label>
+                            <input type="text" class="form-control" id="username" placeholder="請輸入姓名" required>
+                            <div class="invalid-feedback">
+                                請輸入姓名
+                            </div>
+                        </div>
+                        <div class="from-group mb-3">
+                            <label for="username">請輸入電話號碼*</label>
+                            <input type="tel" class="form-control" id="tel" placeholder="請輸入電話號碼" required>
+                            <div class="invalid-feedback">
+                                請輸入電話號碼
+                            </div>
+                        </div>
+                        <div class="from-group mb-3">
+                            <label for="username">請輸入Email*</label>
+                            <input type="email" class="form-control" id="email" placeholder="請輸入Email" required>
+                            <div class="invalid-feedback">
+                                請輸入Email
+                            </div>
+                        </div>
+                        <div class="from-group mb-3">
+                            <label for="username">請輸入人數*</label>
+                            <input type="number" class="form-control" id="number" placeholder="請輸入人數*" required>
+                            <div class="invalid-feedback">
+                                請輸入人數
+                            </div>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">需要素食</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">不需要素食</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-secondary">取消</button>
+                            <button type="submit" class="btn btn-primary">送出</button>
+                        </div>
+                    </form>
+                    <script>
+                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                        (function () {
+                            'use strict';
+                            window.addEventListener('load', function () {
+                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                var forms = document.getElementsByClassName('needs-validation');
+                                // Loop over them and prevent submission
+                                var validation = Array.prototype.filter.call(forms, function (form) {
+                                    form.addEventListener('submit', function (event) {
+                                        if (form.checkValidity() === false) {
+                                            event.preventDefault();
+                                            event.stopPropagation();
+                                        }
+                                        form.classList.add('was-validated');
+                                    }, false);
+                                });
+                            }, false);
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid justify-content">
+        <div class="row">
+            <div class="col-md-6 bg-cover p-3"
+                style="background-image: url(https://images.unsplash.com/photo-1484834762280-66a18a5a8f0b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+                <div class="row">
+                    <div class="col-md-9 text-light" style="margin-top: 94px; margin-left: 85px;">
+                        <h3 class="mb-3">現在外帶優惠🔥🔥🔥</h3>
+                        <p>哈粉們，我們的菜單在這兒提供您們參考ㄛ
+                            🔥🔥🔥⬇️外帶優惠如下⬇️🔥🔥🔥
+                            凡來電訂餐及來店外帶自取，
+                            立即享每份餐點加贈一份價值60元
+                            （特濃奶茶、香草紅茶&主廚濃湯二選一）優惠🥰
+                            🔥🔥🔥此優惠只限電話訂餐&店內外帶ㄛ🔥🔥🔥
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 bg-cover p-3"
+                style="background-image: url(https://media.istockphoto.com/photos/culinary-background-with-traditional-ingredients-of-italian-cuisine-picture-id1278745986?b=1&k=20&m=1278745986&s=170667a&w=0&h=O7DjUu6D-mBNvwS68Ou_BmNF22a5XwrQgk2j9uV2Hs4=);">
+                <div class="row">
+                    <div class="col-md-9 text-light" style="padding-left: 25px;">
+                        <h3 class="mb-1">哈波尼司義麵坊happiness pasta</h3>
+                        <div class="div">
+                            <p>☎️訂位、包場、外帶專線（02）2984-8019</p>
+                            <p>🏠地址:新北市三重區重陽路一段57號</p>
+                            <p>🈺 營業時間:10:00～14:00 17:00~21:00</p>
+                            <p>🚇交通：三重捷運站3號出口步行3-5分鐘</p>
+                            <p>🅿️本店路邊有停車格，斜對面羊肉爐旁巷內也有停車場</p>
+                        </div>
+                        <div class="text-right">
+                            <a href="#" class="btn btn-outline-warning ">加入我們</a>
+                            <a href="#" class="btn btn-outline-warning ">聯絡我們</a>
+                            <a href="#" class="btn btn-outline-warning ">公司地址</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row" style="background: gray;">
+                <div class="container" style="height: 70px; margin-top: 20px; display: flex;">
+                    <div class="p-3">
+                        <a href="#" class="text-light"><i class="fas fa-cube text-light"></i>Copright</a>
+                        <a href="#" class="text-light"><i class="fas fa-cube text-light"></i>首頁</a>
+                        <a href="#" class="text-light"><i class="fas fa-cube text-light"></i>臉書</a>
+                        <a href="#" class="text-light"><i class="fas fa-cube text-light"></i>about</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
